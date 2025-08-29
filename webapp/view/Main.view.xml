@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="project.controller.ListReportExt"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="mainPage" title="My First View">
+        
+        <headerContent>
+            <Button id="showDialogButtonHeader"
+                    icon="sap-icon://message-popup"  
+                    text="Show Confirmation"
+                    press=".onOpenDialog" />
+        </headerContent>
+
+        <content>
+            <Text id="mainViewText" text="Hello from your new View!"/>
+            
+        </content>
+    </Page>
+</mvc:View>

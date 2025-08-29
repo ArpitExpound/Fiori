@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        id="confirmationDialog"
+        title="Confirm Action"
+        resizable="true"
+        draggable="true">  <!-- Corrected: draggable -->
+        <content>
+            <Text id="confirmDialogText" text="Are you sure you want to proceed with this action?" class="sapUiTinyMargin"/> <!-- Added ID -->
+        </content>
+        <beginButton>
+            <Button id="confirmButton" text="Confirm" type="Accept" press=".onConfirmDialog"/> <!-- Added ID -->
+        </beginButton>
+        <endButton>
+            <Button id="cancelButton" text="Cancel" type="Reject" press=".onCancelDialog"/> <!-- Added ID -->
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

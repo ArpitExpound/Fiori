@@ -91,6 +91,18 @@
       "compact": true,
       "cozy": true
     },
+
+      "extends": {
+            "extensions": {
+              "sap.ui.controllerExtensions": {
+                "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                  "controllerName": "project.ext.controller.ListReportExt"
+                }
+              }
+  }
+},
+
+
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
@@ -148,7 +160,8 @@
               }
             },
             "tableSettings": {
-              "type": "ResponsiveTable"
+              "type": "ResponsiveTable",
+              "multiSelect": true
             }
           }
         },
